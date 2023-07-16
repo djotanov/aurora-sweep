@@ -103,8 +103,8 @@
         //│  !       │  @       │  £       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ¬       │
             &kp EXCL   &kp DQT    &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  "       │  [       │  {       │  (       │          │   │   /      │  -       │  =       │     :    │  ;       │
-            &kp AT     &kp LBKT   &kp LBRC   &kp LPAR   &trans         &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
+        //│  "       │  [       │  {       │  (       │    #     │   │   /      │  -       │  =       │     :    │  ;       │
+            &kp AT     &kp LBKT   &kp LBRC   &kp LPAR   &kp HASH       &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  '       │  ]       │  }       │  )       │          │   │    \ |   │  _       │  +       │  # ~     │   ?      │
             &kp SQT     &kp RBKT   &kp RBRC   &kp RPAR  &trans         &kp NUBS   &kp UNDER  &kp PLUS   &kp NUHS  &kp QMARK
