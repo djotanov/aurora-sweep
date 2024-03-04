@@ -105,7 +105,7 @@
             &kp AT     &kp LBKT   &kp RBKT   &kp LPAR   &kp RPAR       &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  '       │¬         │  ~       │ {        │ }        │   │ \ |      │ _        │ +        │ # ~      │ ?        │
-            &kp SQT   WHRML(TILDE, TILDE2,     LBRC)    &kp RBRC       &kp NUBS WRHMR(UNDER, PLUS,      NUHS)      &kp QMARK
+            &kp SQT   WHRML(TILDE, TILDE2,     LBRC)    &kp RBRC       &kp NUBS WHRMR(UNDER, PLUS,      NUHS)      &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp LSHIFT     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
