@@ -50,11 +50,11 @@
         //│  Q       │  W       │  F       │  P       │   B      │   │  J       │  L       │  U       │  Y       │ Back     │
             &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  A       │   R      │  S       │  T       │  G       │   │  M       │  N       │  E       │  I          O       │
-            &kp A    WHRML(R,         S,         T)     &kp G          &kp M      WHRMR(N,        E,         I)   &kp O
+        //│  A       │  R       │ S        │ T        │ G        │   │  M       │  N       │  E       │  I          O       │
+            &kp A       &kp R     &kp S      &kp T      &kp G           &kp M      &kp N      &kp E      &kp I     &kp O
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ '        │
-            &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp SQT
+        //│  Z       │  X       │  C       │  D       │  V       │   │ K        │  H       │ , <      │ . >      │ '        │
+            &kp Z    WHRML(X,         C,         D)      &kp V         &kp K    WHRMR(H,      COMMA,    DOT)       &kp SQT
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -68,10 +68,10 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ Back     │
-            &kp A     WHRML(S,        D,         F)     &kp G          &kp H      WHRMR(J,       K,           L)   &kp BSPC
+            &kp A       &kp S      &kp D      &kp F      &kp G          &kp H      &kp J      &kp K      &kp L     &kp BSPC
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , <      │ . >      │ ;        │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp SEMI
+            &kp Z    WHRML(X,        C,         V)      &kp B          &kp N     WHRMR(M,     COMMA,      DOT)     &kp SEMI
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &lt LEF TAB  &kp LSHIFT    &kp SPACE  &lt RIG ENTER
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -85,10 +85,10 @@
             &kp PLUS    &kp N7     &kp N8     &kp N9     &kp ASTRK     &kp PG_UP  &kp HOME   &kp UARW   &kp END    &kp END
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│ -        │ 4        │  5       │  6       │  /       |   | BCSP     │ LEFT     │ DOWN     │ RIGHT    │ DEL      │
-            &kp MINUS WHRML(N4,      N5,        N6)      &kp FSLH      &kp BSPC  WHRMR(LARW,   DARW,     RARW)     &kp DEL 
+            &kp MINUS  &kp N4      &kp N5     &kp N6     &kp FSLH      &kp BSPC   &kp LARW   &kp DARW   &kp RARW   &kp DEL 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ 0        │ 1        │ 2        │ 3        │ .        │   │ PG DN    │          │          │          │          │
-            &kp N0     &kp N1     &kp N2     &kp N3     &kp DOT        &kp PG_DN  &trans     &trans     &trans     &trans 
+        //│ 0        │ 1        │ 2        │ 3        │ .        │   │ PG DN    │ _        │ +        │ #        │          │
+            &kp N0   WHRML(N1,     N2,         N3)      &kp DOT        &kp PG_DN WHRMR(UNDER, PLUS,     NUHS)      &trans 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -101,11 +101,11 @@
         //│  !       │  @       │  £       │  $       │  %       │   │  ^       │  &       │  *       │  `       │  ~       │
             &kp EXCL   &kp DQT    &kp HASH   &kp DLLR   &kp PRCNT      &kp CARET  &kp AMPS   &kp ASTRK  &kp GRAVE   &kp TILDE2
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  "       │  [       │  ]       │ (        │ )        │   │ /        │ -        │  =       │ :        │  ;       │
-            &kp AT     WHRML(LBKT,  RBKT,    LPAR)      &kp RPAR       &kp FSLH  WHRMR(MINUS, EQUAL,    COLON)      &kp SEMI
+        //│  "       │ [        │ ]        │ (        │ )        │   │ /        │ -        │ =        │ :        │  ;       │
+            &kp AT     &kp LBKT   &kp RBKT   &kp LPAR   &kp RPAR       &kp FSLH   &kp MINUS  &kp EQUAL  &kp COLON   &kp SEMI
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  '       │          │          │  {       │ }        │   │ \ |      │ _        │ +        │ # ~      │ ?        │
-            &kp SQT     &trans    &trans     &kp LBRC  &kp RBRC       &kp NUBS   &kp UNDER  &kp PLUS   &kp NUHS   &kp QMARK
+        //│  '       │¬         │  ~       │ {        │ }        │   │ \ |      │ _        │ +        │ # ~      │ ?        │
+            &kp SQT   WHRML(TILDE, TILDE2,     LBRC)    &kp RBRC       &kp NUBS WRHMR(UNDER, PLUS,      NUHS)      &kp QMARK
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp LSHIFT     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
